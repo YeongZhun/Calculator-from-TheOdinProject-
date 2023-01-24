@@ -1,0 +1,130 @@
+:root {
+    --background: #FFE4F1;
+    --font: #222;
+    --border: #333;
+    --screen: #eee;
+    --calculator: #FCD7F9;
+    --btn: #F3DFE8;
+    --btn-hover: #ddd;
+    --btn-active: #ccc;
+    --btn-red: #FF79B8;
+    --btn-red-hover: #e99;
+    --btn-red-active: #d88;
+    --btn-blue: #89C4FF;
+    --btn-blue-hover: #99e;
+    --btn-blue-active: #88d;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--font);
+    font-family: Open sans-serif;
+    line-height: 1.6;
+    /* footer support */
+    margin-bottom: 100px;
+  }
+  
+  button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* MAIN */
+  
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    min-height: 500px;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  
+  .calculator {
+    width: 400px;
+    border: 2px var(--border) solid;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: var(--calculator);
+  }
+  
+  .screen {
+    padding: 10px 20px;
+    border: 2px var(--border) solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: var(--screen);
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .screen-last {
+    min-height: 32px;
+    font-size: 20px;
+  }
+  
+  .screen-current {
+    min-height: 64px;
+    font-size: 40px;
+  }
+  
+  .buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 19px;
+  }
+  
+  .span-2 {
+    display: grid;
+    margin-left:auto;
+    
+  }
+  
+  .btn {
+    padding: 20px;
+    border: 2px var(--border) solid;
+    border-radius: 5px;
+    background-color: var(--btn);
+    font-size: 20px;
+  }
+  
+  .btn:hover {
+    background-color: var(--btn-hover);
+  }
+  
+  .btn:active {
+    background-color: var(--btn-active);
+  }
+  
+  .btn-red {
+    padding-right: 20px;
+    background-color: var(--btn-red);
+  }
+  
+  .btn-red:hover {
+    background-color: var(--btn-red-hover);
+  }
+  
+  .btn-red:active {
+    background-color: var(--btn-red-active);
+  }
+  
+  .btn-blue {
+    padding-left: 20px;
+    background-color: var(--btn-blue);
+  }
+  
+  .btn-blue:hover {
+    background-color: var(--btn-blue-hover);
+  }
+  
+  .btn-blue:active {
+    background-color: var(--btn-blue-active);
+  }
+  
